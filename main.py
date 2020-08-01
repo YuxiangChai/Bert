@@ -112,7 +112,7 @@ def main():
         train(model, train_loader, criterion, optimizer, scheduler)
         val(model, val_loader)
 
-    tqdm.write('\n Final test...')
+    tqdm.write('\nFinal test...')
     test_set = DataSet(args.test)
     test_loader = DataLoader(test_set, batch_size=20)
     test(model, test_loader)

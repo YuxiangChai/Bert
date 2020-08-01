@@ -7,7 +7,7 @@ import torch
 class DataSet(data.Dataset):
     def __init__(self, path):
         super(DataSet, self).__init__()
-        self.tokenizer = BertTokenizer.from_pretrained('bert-base-cased')
+        self.tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
         self.sentences = []     # raw sentence
         self.labels = []        # labels
         self.tokens = []        # tokenized ids
